@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://iconsax.gitlab.io/i/icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tech Care - Health Care Dashboard</title>
+</head>
+
+<body>
+    <!-- header section -->
+    <header class="header">
+        <img src="./public/TestLogo.svg" width="211" height="48" alt="Tech Care Logo" />
+
+        <!-- navigation links -->
+        <nav class="nav-bar">
+            <a href="#home"> <i class="iconsax" icon-name="home-1"></i> Overview</a>
+            <a href="#patients" class="active"> <i class="iconsax" icon-name="users"></i> Patients </a>
+            <a href="#schedule"> <i class="iconsax" icon-name="calendar-1"></i> Schedule </a>
+            <a href="#message"> <i class="iconsax" icon-name="message-dash-2"></i> Messages </a>
+            <a href="#transactions"> <i class="iconsax" icon-name="wallet-2"></i> Transactions </a>
+        </nav>
+
+        <div class="user-profile">
+            <div>
+                <img src="./public/senior-woman-doctor-and-portrait-smile-for-health-2023-11-27-05-18-16-utc@2x.png"
+                    alt="User Profile" width="44" height="44" />
+                <div>
+                    <p class="user-name">Dr. Jose Simmons</p>
+                    <p class="user-role">General Practitioner</p>
+                </div>
+                <i class="iconsax" icon-name="setting-1"></i>
+                <img src="./public/more_horiz_FILL0_wght300_GRAD0_opsz24.svg" alt="More Options" width="18"
+                    height="4" />
+            </div>
+        </div>
+    </header>
+
+    <!-- aside bar -->
+    <aside class="aside-patient-list">
+        <div class="aside-header">
+            <h2>Patients</h2>
+            <i class="iconsax" icon-name="search-normal-2"></i>
+        </div>
+
+        <!-- patient list -->
+        <div class="patient-list">
+            <!-- patient items rendered here -->
+        </div>
+
+    </aside>
+
+    <!-- main content area -->
+    <main>
+        <h2>Diagnosis History</h2>
+
+        <!-- cards -->
+        <div class="diagnosis-history">
+            <!-- cards rendered here -->
+        </div>
+
+        <!-- table list -->
+        <h2>Diagnosis List</h2>
+        <div class="diagnosis-list">
+            <!-- table renders here -->
+
+        </div>
+    </main>
+
+    <aside class="aside-patient-info">
+        <section class="patient-info-content">
+            <!-- patient info rendered here -->
+        </section>
+
+        <section class="lab-info-content">
+            <h3 style="margin-bottom: 10px;">Lab Results</h3>
+            <div></div>
+        </section>
+    </aside>
+
+    <script type="module" src="./main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+
+</body>
+
+</html>
