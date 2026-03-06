@@ -69,13 +69,13 @@ a {
     display: block;
 }
 
-.user-profile > div {
+.user-profile>div {
     display: flex;
     align-items: center;
     gap: 8px;
 }
 
-.user-profile > div > div {
+.user-profile>div>div {
     display: flex;
     flex-direction: column;
     line-height: 1.2;
@@ -117,30 +117,30 @@ a {
     gap: 20px;
 }
 
-.aside-patient-list .patient-list > div {
+.aside-patient-list .patient-list>div {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+
 }
 
-.aside-patient-list .patient-list > div:hover {
+.aside-patient-list .patient-list>div:hover {
     background: #D8FCF7 0% 0% no-repeat padding-box;
     opacity: 1;
     cursor: pointer;
 }
 
-.aside-patient-list .patient-list > .active {
+.aside-patient-list .patient-list>.active {
     background: #D8FCF7 0% 0% no-repeat padding-box;
     opacity: 1;
     cursor: pointer;
 }
 
-.aside-patient-list .patient-list > div > img {
+.aside-patient-list .patient-list>div>img {
     flex-shrink: 0;
 }
 
-.aside-patient-list .patient-list > div > div {
+.aside-patient-list .patient-list>div>div {
     display: flex;
     flex-direction: column;
     margin-left: 10px;
@@ -150,8 +150,7 @@ a {
 main {
     top: 122px;
     left: 417px;
-    scroll-behavior: smooth;
-    width: 766px;
+    right: 395px;
     height: 100vh;
     position: fixed;
     overflow-y: scroll;
@@ -201,7 +200,7 @@ main .diagnosis-history .card:first-child {
     background: #F4F0FE 0% 0% no-repeat padding-box;
     grid-column: span 3;
     width: 100%;
-    padding: 20px; 
+    padding: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -211,7 +210,7 @@ main .diagnosis-history .card:first-child {
 
 
 main .diagnosis-history .card:first-child .chart-container {
-    flex: 1.2; 
+    flex: 1.2;
     height: 150px;
 }
 
@@ -247,56 +246,56 @@ main .diagnosis-list table {
 }
 
 main .diagnosis-list table th {
-  padding: 12px 0;
-  text-align: left;
-  background: #F6F7F8 0% 0% no-repeat padding-box; 
-  font-weight: 600;
-  color: #072635;
+    padding: 12px 0;
+    text-align: left;
+    background: #F6F7F8 0% 0% no-repeat padding-box;
+    font-weight: 600;
+    color: #072635;
 }
 
 
 main .diagnosis-list table td {
-  border-top: 1px solid #EEE;
-  text-align: left;
-  line-height: 2;
-  color: #555;
+    border-top: 1px solid #EEE;
+    text-align: left;
+    line-height: 2;
+    color: #555;
 }
 
 .aside-patient-info {
-  position: fixed;
-  right: 13px;
-  top: 122px;
-  width: 367px;
-  height: calc(100vh - 130px);
-  background: #fff;
-  border-radius: 16px;
-  padding: 24px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-  overflow-y: auto;
+    position: fixed;
+    right: 13px;
+    top: 122px;
+    width: 367px;
+    height: calc(100vh - 130px);
+    background: #fff;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    overflow-y: auto;
 }
 
 .patient-card {
-  text-align: center;
+    text-align: center;
 }
 
 .patient-avatar {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  margin-bottom: 16px;
-  object-fit: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 16px;
+    object-fit: cover;
 }
 
 .info-label {
-  color: #7C8DB5;
-  font-size: 13px;
-  margin-top: 12px;
+    color: #7C8DB5;
+    font-size: 13px;
+    margin-top: 12px;
 }
 
 .contact-info {
-  text-align: left;
-  margin-top: 20px;
-  line-height: 1.6;
+    text-align: left;
+    margin-top: 20px;
+    line-height: 1.6;
 }
 
 .contact-info span {
@@ -318,17 +317,18 @@ main .diagnosis-list table td {
     border-radius: 8px;
     padding: 10px;
 }
+
 .view-more-btn {
-  margin-top: 20px;
-  width: 220px;
-  height: 41px;
-  color: #072635;
-  font-weight: bold;
-  border: none;
-  cursor: pointer;
-  background: #01F0D0 0% 0% no-repeat padding-box;
-  border-radius: 41px;
-  opacity: 1;
+    margin-top: 20px;
+    width: 220px;
+    height: 41px;
+    color: #072635;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    background: #01F0D0 0% 0% no-repeat padding-box;
+    border-radius: 41px;
+    opacity: 1;
 }
 
 .aside-patient-info .lab-info-content {

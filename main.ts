@@ -56,6 +56,8 @@ async function fetchPatients() {
 const patientsQuery = {
   queryKey: ["patients"],
   queryFn: fetchPatients,
+  staleTime: 1000 * 60 * 60 * 24,
+  gcTime: 1000 * 60 * 60 * 24,
 };
 
 const observer = new QueryObserver(queryClient, patientsQuery);
@@ -78,7 +80,7 @@ observer.subscribe((result: any) => {
       div.classList.add("patient-item");
       if (p.name === "Jessica Taylor") div.classList.add("active");
       div.innerHTML = `
-        <img src="${p.profile_picture}" alt="Patient Profile" width="48" height="48"/>
+        <img src="${p.profile_picture}" alt="Patient Profile" width="48" height="48" loading="lazy"/>
         <div>
           <p class="user-name">${p.name}</p>
           <p class="user-role">${p.gender}, ${p.age}</p>
@@ -271,7 +273,7 @@ observer.subscribe((result: any) => {
       patientInfoElement.innerHTML = `
         <div class="patient-card">
           <div class="patient-header">
-            <img src="${jessica.profile_picture}" alt="${jessica.name}" class="patient-avatar"/>
+            <img src="${jessica.profile_picture}" alt="${jessica.name}" class="patient-avatar" loading="eager"/>
             <h3 style="font-weight: bold; font-size: 24px;">${jessica.name}</h3>
           </div>
 
